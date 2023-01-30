@@ -1,12 +1,12 @@
-body {
+/* body {
     overflow-x: hidden;
     margin: 0 0 0 0;
-}
+} */
 
 
 div.head2 {
     height: 40px;
-    width: 100%;
+    width: 130;
     background-color: rgba(216, 15, 15, 0.17);
     margin: 0 0 0 0;
     border-top: 1px solid #ab2330;

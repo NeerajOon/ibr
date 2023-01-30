@@ -48,42 +48,7 @@ export default function Registration() {
 
   const register =async (e) => {
     e.preventDefault();
-        // let studentDetails = {
-    //   firstname,
-    //   lastname,
-    //   fathersname,
-    //   dob,
-    //   gender,
-    //   maritialstatus,
-    //   annualincome,
-    //   email,
-    //   contact,
-    //   alternatecontact,
-    //   board10,
-    //   school10,
-    //   pass10,
-    //   per10,
-    //   board12,
-    //   school12,
-    //   pass12,
-    //   per12,
-    //   universityUG,
-    //   collegeUG,
-    //   passUG,
-    //   perUg,
-    //   universityPG,
-    //   collegePG,
-    //   passPG,
-    //   perPg,
-    //   address,
-    //   state,
-    //   city,
-    //   q1,
-    //   q2,
-    //   q3,
-    //   q4,
-    //   q5,
-    // };
+      
     let formData = new FormData();
     formData.set("firstname",firstname)
     formData.set("lastname",lastname)
@@ -146,11 +111,11 @@ export default function Registration() {
   };
   return (
     <div style={{ width: "auto" }}>
-      <div style={{ borderTop: "15px solid #ab2330" }}>
+      <div style={{  Top: "15px solid #ab2330" }}>
         <h3
           style={{
             fontFamily: "Arial Narrow', Arial",
-            fontSize: " 35px",
+            fontSize: "35px",
             marginTop: "25px",
           }}
         >
@@ -159,7 +124,7 @@ export default function Registration() {
       </div>
       <div
         className="row container-fluid"
-        style={{ width: "auto", marginTop: " 30px" }}
+        style={{ width: "100%", marginTop: " 30px", paddingRight:"5px", paddingLeft:"5px" }}
       >
         <div className="step-height col-lg-3 col-md-3 col-sm-3 col-xs-3 head2">
           <a className="">
@@ -212,8 +177,8 @@ export default function Registration() {
       <form onSubmit={register}>
         <div className="container-fluid">
           <div className="section-header">Personal Details</div>
-          <div className="form-row">
-            <div className="form-group col-md-6">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-6">
               <label for="firstname">First Name</label>
               <input
                 type="text"
@@ -222,7 +187,7 @@ export default function Registration() {
                 onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
-            <div className="form-group col-md-6">
+            <div className="input-group-text  col-md-6">
               <label for="lname">Last Name</label>
               <input
                 type="text"
@@ -233,8 +198,8 @@ export default function Registration() {
             </div>
           </div>
 
-          <div className="form-row">
-            <div className="form-group col-md-6">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-6">
               <label for="fathername">Father Name</label>
               <input
                 type="text"
@@ -244,7 +209,7 @@ export default function Registration() {
               />
             </div>
 
-            <div className="form-group col-md-6">
+            <div className="input-group-text  col-md-6">
               <label for="dob">Date of Birth </label>
               <input
                 id="dob"
@@ -256,8 +221,8 @@ export default function Registration() {
             </div>
           </div>
 
-          <div className="form-row">
-            <div className="form-group col-md-3 my-4">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-3 my-4">
               <label for="gender" className="fieldlabels">
                 Gender
               </label>
@@ -281,7 +246,7 @@ export default function Registration() {
               <label for="gender2">Female</label>
               <br />
             </div>
-            <div className="form-group col-md-3 col-sm-3 my-4">
+            <div className="input-group-text  col-md-3 col-sm-3 my-4">
               <label for="maritialstatus" className="fieldlabels">
                 Maritialstatus
               </label>
@@ -305,7 +270,7 @@ export default function Registration() {
               <label for="maritialstatus2">Unmarried</label> <br />
             </div>
 
-            <div className="form-group col-md-6">
+            <div className="input-group-text  col-md-6">
               <label className="fieldlabels ">Annual Income: *</label>
               <input
                 id="annualincome"
@@ -317,8 +282,8 @@ export default function Registration() {
             </div>
           </div>
 
-          <div className="form-row">
-            <div className="form-group col-md-6">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-6">
               <label className="fieldlabels">Email</label>
               <input
                 id="email"
@@ -330,7 +295,7 @@ export default function Registration() {
               />
             </div>
 
-            <div className="form-group col-md-3">
+            <div className="input-group-text  col-md-3">
               <label className="fieldlabels">Mobile Number</label>
               <input
                 id="contact"
@@ -340,7 +305,7 @@ export default function Registration() {
                 name="contact"
               />
             </div>
-            <div className="form-group col-md-3">
+            <div className="input-group-text  col-md-3">
               <label className="fieldlabels">Alternate Mobile Number</label>
               <input
                 id="contact"
@@ -355,9 +320,9 @@ export default function Registration() {
         <div className="container-fluid">
           <div className="section-header">Qualification Details</div>
 
-          <div className="form-row">
-            <div className="form-group col-md-6">
-              <fieldset className="border p-3 rounded">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-6">
+              <fieldset className="  p-3 rounded">
                 <legend className="w-auto">
                   Class 10<sup>th</sup>
                 </legend>
@@ -411,8 +376,8 @@ export default function Registration() {
                 </div>
               </fieldset>
             </div>
-            <div className="form-group col-md-6">
-              <fieldset className="border p-3 rounded">
+            <div className="input-group-text  col-md-6">
+              <fieldset className="  p-3 rounded">
                 <legend className="w-auto">
                   Class 12<sup>th</sup>
                 </legend>
@@ -467,9 +432,9 @@ export default function Registration() {
             </div>
           </div>
 
-          <div className="form-row">
-            <div className="form-group col-md-6">
-              <fieldset className="border p-3 rounded">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-6">
+              <fieldset className="  p-3 rounded">
                 <legend className="w-auto">Under Graduation</legend>
                 <div className="row">
                   <div className="col-md-6">
@@ -518,8 +483,8 @@ export default function Registration() {
                 </div>
               </fieldset>
             </div>
-            <div className="form-group col-md-6">
-              <fieldset className="border p-3 rounded">
+            <div className="input-group-text  col-md-6">
+              <fieldset className="  p-3 rounded">
                 <legend className="w-auto">Post Graduation</legend>
                 <div className="row">
                   <div className="col-md-6">
@@ -573,9 +538,9 @@ export default function Registration() {
         <div className="container-fluid">
           <div className="section-header">Address Details</div>
 
-          <div className="form-row ">
-            <div className="form-group col-md-6">
-              <fieldset className="border p-3 rounded">
+          <div className="input-group  ">
+            <div className="input-group-text  col-md-6">
+              <fieldset className="  p-3 rounded">
                 <legend className="w-auto">Local Address</legend>
 
                 <div className="row">
@@ -617,9 +582,9 @@ export default function Registration() {
               </fieldset>
             </div>
           </div>
-          <div className="form-row">
-            <div className="form-group col-md-10">
-              <fieldset className="border p-3 rounded">
+          <div className="input-group ">
+            <div className="input-group-text  col-md-10">
+              <fieldset className="  p-3 rounded">
                 <legend className="w-auto">Questions</legend>
                 <i className="fa fa-pencil-square-o">
                   &ensp; WHAT IS YOUR INTERST ?

@@ -5,11 +5,11 @@ export default function Slider() {
     <div>
          <section className="hero-section hero-section-full-height">
             <div className="container-fluid">
-                <div className="row">
-
-                    <div className="col-lg-12 col-12 p-0">
-                        <div id="hero-slide" className="carousel carousel-fade slide" data-bs-ride="carousel">
-                            <div className="carousel-inner">
+                <div className="row" >
+                                                         {/* borderStyle:"solid", borderRadius:"0 0 55% 10px", borderColor:"red" */}
+                    <div className="col-lg-12 col-12 p-0" >
+                        <div id="hero-slide" className="carousel carousel-fade slide" data-bs-ride="carousel"  >
+                            <div className="carousel-inner" style={{borderRadius:"0 0 55% 10px"}} > 
                                 <div className="carousel-item active">
                                     {/* <img src="images/slide/volunteer-helping-with-donation-box.jpg" */}
                                     <img src="images/slide/info2.jpg" style={{background:"linearGradient( rgba(0, 0, 1, 0.31),rgba(0, 0, 1, 0.35))"}}

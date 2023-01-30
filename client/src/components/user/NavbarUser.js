@@ -6,7 +6,7 @@ import { Link, Outlet } from 'react-router-dom'
 export default function NavbarUser() {
   return (
     <div>
-      <header className="site-header">
+      <header className="site-header" style={{backgroundImage:"linear-gradient(130deg, black,  #ab2330, black)"}}>
         <div className="container-fluid">
             <div className="row">
 
@@ -56,10 +56,10 @@ export default function NavbarUser() {
         </div>
     </header>
 
-    <nav className="navbar navbar-expand-lg bg-light shadow-lg  ">
-        <div className="container">
+    <nav className="navbar navbar-expand-lg bg-light shadow-lg">
+        <div className="container-fluid">
             <Link className="navbar-brand" to="index.html">
-                <img src={process.env.PUBLIC_URL + '/logo.png'} className="logo img-fluid" alt="Kind Heart Charity"/>
+                <img src={process.env.PUBLIC_URL + '/logo.png'} className="logo mx-3" style={{width:"50px"}} alt="Foundation Logo"/>
                 <span>
                     Infobeans Foundation
                     <small>Non-profit Organization</small>
